@@ -1,0 +1,503 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Neonderthaw&family=Roboto:ital,wght@0,100;0,300;1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Neonderthaw&family=Roboto:ital,wght@0,100;1,100;1,400&display=swap');
+*,
+*:after,
+*:before{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    /* margin-top: 1px; */
+}
+
+
+
+.img1{
+    height: auto;
+    width: 100px;
+}
+
+
+:active,
+:hover,
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+
+a,
+a:hover{
+    text-decoration: none;
+}
+
+a:hover{
+    color:var(--primary-color);
+}
+
+
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+/* **** Variable define *** */
+:root{
+    --primary-color:#AB2C48;
+    --secondry-color:#43121d;
+    --third-color:#f98169;
+    --white-color:#fff;
+    --text-color:#555;
+    --text-gray:#999;
+    --black-color:#000;
+    --primary-font:'Roboto', sans-serif;
+    --secondry-font:'Quicksand',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ body{
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+} 
+/* 
+==================================
+           Custom Scrollbar
+==================================
+*/
+::-webkit-scrollbar{
+    width:0.625
+}
+
+::-webkit-scrollbar-track{
+    background:var(--white-color) ;
+}
+
+::-webkit-slider-thumb{
+    background: var(--primary-color);
+}
+/* 
+============================
+   Custom CSS Design
+============================
+*/
+
+h1{
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    font-family: var(--secondry-font);
+    color: var(--secondry-color);
+    line-height: 3rem                       ;
+}
+
+h4{
+    color: var(--secondry-color);
+    font-family: var(--secondry-font);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+h5{
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-family: var(--secondry-font);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+p{
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.first-button{
+    border-radius: 10px;
+    border: 0.1875rem solid green;
+    padding: 0.625rem 1.875rem;
+    background: linear-gradient(to bottom, #e65c44 0%, #ca1717 100%);
+    color: mintcream;
+}
+
+.first-button:hover{
+    transition:all .4s ease-out 0s ;
+    background: khaki;
+}
+
+.main-button{
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: green;
+    border: 0.1875rem solid green;
+    border-radius: 10px;
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s ;
+    transition:all .4s ease-out 0s ;
+
+}
+.white-button{
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    border: 0.1875rem solid green;
+    background-color: brown;
+    border-radius: 10px;
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s ;
+    transition:all .4s ease-out 0s ;
+
+}
+
+.main-button:hover{
+    background-color: transparent;
+    color: white;
+    background-color: var(--primary-color);
+}
+.wrapper{
+    padding-top:8.25rem;
+    padding-bottom: 8.25rem;
+}
+
+.text-content{
+    width: 70%;
+    margin:auto;
+}
+
+.counter-seaction h2,
+.testimonial-section h2,
+.book-food-text h2{
+    color:white;
+}
+
+
+/* Header design */
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left:0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition:all 0.3s ease-out ;
+    background-color:darkgreen;
+  
+}
+
+.navigation-wrap .nav-item{
+ padding:0 0.625rem ;
+ transition: all 200ms linear ;
+}
+.navbar-toggler:focus{
+ outline: unset;
+ border:unset;
+ box-shadow: none;
+}
+.nav-link{
+ font-size: 20px;
+ font-weight: 600;
+ text-transform: capitalize;
+ color:rgb(235, 238, 40);
+ letter-spacing: 1px;
+
+}
+.nav-link:hover{
+  color: rgb(219, 21, 21);
+}
+.navigation-wrap .main-button{
+ padding: 0.3125rem 1.4375rem;
+ box-shadow:none;
+ margin-left: 0.625rem;
+ color: ghostwhite;
+ 
+}
+
+.navigation-wrap.scroll-on{
+ position: fixed;
+ top:0;
+ left:0;
+ width:100%;
+ background-color: white;
+ box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0);
+ transition: all .15s ease-in-out 0s;
+
+}
+
+.navigation-wrap-scroll-on{
+ position: fixed;
+ top:0;
+ left:0;
+ width:100%;
+ background-color: white;
+ box-shadow: 0 0.125rem 1.75rem rgb(0,0,0,0,9);
+ transition: all .15 ease-in-out;
+}
+
+/* 
+==================
+   top banner
+==================
+*/
+
+.top-banner{
+    width: 100%;
+    /* height: 100%; */
+    box-sizing:cover ; 
+    padding:16.875rem 0 9.375rem ;
+    background-image: url(./images/lovely.jpg);
+    background-repeat: no-repeat;
+    /* height: 100%;
+    width: 100%; */
+    background-size: cover;
+   
+}
+
+/* 
+============================
+    COUNTER DESIGN
+============================
+*/
+
+.counter-seaction{
+    background-color: darkgreen;
+    padding: 2.5rem 0;
+    /* float:flex; */
+}
+
+.counter-seaction p{
+    color: aliceblue;
+    text-transform: uppercase;
+}
+.about-section{
+    background-color: white;
+}
+.about-section.card,
+.about-section .card img{
+    border-radius: 0.625rem;
+}
+.about-section .text-sec{
+    padding: 2rem;
+    color: bold;
+}
+/* 
+========================
+  Story Website
+========================
+
+*/
+.write{
+    /* font-weight: 900; */
+    color: rgb(204, 17, 17);
+    /* font-family: 'Neonderthaw', cursive; */
+    font-family: 'Lobster', cursive;
+    /* margin-top: 5px; */
+}
+.co{
+    font-family: 'Lobster', cursive;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    
+}
+/*
+============================
+        Explore Food
+============================
+ */
+.text{
+    font-weight: 900;
+    
+}
+
+.margin{
+    margin-right: 50px;
+}
+.food-type{
+    padding: 3.25rem;
+}
+.food-type ul li{
+    font-size: 1rem;
+    line-height:32px ;
+    position: relative;
+    margin-left: 30px;
+}
+
+.food-type ul li::before{
+    position: absolute;
+    left:-2.1875rem;
+    color: brown;
+    font-size: 1.25rem;
+    font-family: "Font Awesome 5 Free";
+    content:"\f00c";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+
+}
+.story-section{
+     width:100%;
+     height: 28.125rem;
+     background-image: url(./images/malta.jpg) ;
+     background-attachment: fixed;
+     background-position: 0 71.9125px;
+     padding: 4.37rem 0;
+     background-repeat:no-repeat;
+     background-size: cover;
+     padding-top: 100px;
+     text-align: center;
+     margin-bottom: 20px;
+}
+.heading{
+    text-align: center;
+}
+
+/* explore food */
+.explore-food .card{
+    border:none;
+    background-color: transparent;
+    border-radius: 0.9375rem;
+    margin-right: 5px;
+}
+.explore-food .card img{
+    border-radius: 0.9375rem;
+    object-fit: cover;
+    margin-right: 5px;
+}
+.explore-food .card span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    /* border-bottom: 0.0625rem solid var(--white-color); */
+
+}
+.explore-food .card span del{
+            color:rgb(75, 71, 71);
+            margin-left: 0.5rem;
+}
+.height{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+.bg{
+    background-color:khaki;
+    margin-top: 10px;
+
+}
+.bg p{
+    color: rgb(22, 20, 20);
+}
+/* 
+=========================
+   Testimonial  Start
+=========================
+*/
+.testimoinal-section{
+    background-color:brown;
+}
+
+.testimoinal-section .carousel-item{
+    margin-top: 3rem;
+    padding: 10rem 3.125rem;
+    background-color: lavenderblush;
+    border-radius: 0.9375rem;
+    text-align: center;
+}
+.testimoinal-section .carousel-caption img{
+    max-width: 5rem;
+    border-radius: 50%;
+    padding: 0.3125rem;
+}
+.testimoinal-section .carousel-item .carousel-caption p{
+    font-size: 1.3125rem;
+    line-height: 2.0625rem;
+    padding:0 11% 0.625rem;
+
+}
+.testimoinal-section .carousel-indicators {
+    bottom: -2.8125rem;
+}
+.testimoinal-section .carousel-indicators button{
+  width: 15px;
+  height: 15px;
+  outline: none;
+  border-radius: 50%;
+  border: none;
+  margin-right: 1rem;
+  opacity: 0.2;
+}
+.testimoinal-section .carousel-indicators button.active{
+    opacity: 1;
+}
+/* 
+======================
+    FAQ
+======================
+*/
+.faq p{
+    color:black
+}
+.faq h3 span{
+    color:navy;
+    font-size: 30px;
+}
+.book-food{
+    width: 100%;
+    background-image: url(./images/malta.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 71.9125px;
+    padding: 4.37rem 0;
+}
+/* 
+===========
+from
+=========
+*/
+.from{
+  box-sizing: 100px;
+  background-color:rgb(204, 236, 168);
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px black;
+}
+/* 
+================
+Footer
+================
+*/
+.footer{
+ background-color: rgb(24, 66, 24);
+}
+.footer .footer-link{
+    font-size: 1rem;
+    color: white;
+    padding: 0 1.875rem;
+}
